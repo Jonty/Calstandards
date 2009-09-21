@@ -59,7 +59,7 @@ for ($i = 0; $i < 100; $i++) {
 ?>
 BEGIN:VEVENT
 LOCATION:The Bricklayers Arms, Gresse Street, London, W1
-DTSTART:<?=date('Ymd', $timestamp)?>T183000
+DTSTART:<?=date('Ymd', $timestamp)?>T180000
 SUMMARY:Pub Standards
 DTEND:<?=date('Ymd', $timestamp)?>T230000
 DESCRIPTION:Beer, lots of beer.
