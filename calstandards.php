@@ -3,7 +3,7 @@
 date_default_timezone_set('Europe/London');
 
 function getMiddleDay($day, $month, $year) {
-    $thisMonth = mktime(0, 0, 0, $month, 0, $year);
+    $thisMonth = mktime(0, 0, 0, $month, 1, $year);
 
     $daysInMonth = date('t', $thisMonth);
     $middleTimestamp = mktime(0, 0, 0, $month, floor($daysInMonth/2), $year);
