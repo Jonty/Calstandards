@@ -51,7 +51,7 @@ END:VTIMEZONE
 
 // Strtotime is dumb when the number of days in the current month is
 // larger than the next, so drop back to the 28th to avoid this
-$currentTime = time();
+$currentTime = mktime();
 if (date('j') > 28) {
     $currentTime = mktime(date('H'), date('i'), date('s'), date('n'), 28);
 }
